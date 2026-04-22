@@ -27,6 +27,16 @@ A fully simulated enterprise network built in Cisco Packet Tracer.
 - SVI Inter-VLAN Routing
 - DHCP, DNS
 
+## Test Results
+
+| Source | Destination | Result |
+|--------|-------------|--------|
+| PC_MGMT (VLAN10) | 192.168.10.1 | Success |
+| PC_MGMT (VLAN10) | PC_user1 (VLAN20) | Success |
+| PC_MGMT (VLAN10) | Server (VLAN30) | Success |
+| PC_user1 (VLAN20) | Server (VLAN30) | Success |
+| PC_MGMT | server.souftech.local | DNS OK |
+
 ## Repository Structure
 
 | Folder | Content |
