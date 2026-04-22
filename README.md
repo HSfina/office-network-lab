@@ -1,5 +1,9 @@
 # Office Network Lab — SoufTech Solutions
 
+![Cisco](https://img.shields.io/badge/Cisco-Packet%20Tracer-blue)
+![VLANs](https://img.shields.io/badge/VLANs-3-green)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
+
 A fully simulated enterprise network built in Cisco Packet Tracer.
 
 ## Architecture
