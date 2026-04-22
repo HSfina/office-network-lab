@@ -37,8 +37,8 @@ A fully simulated enterprise network built in Cisco Packet Tracer.
 | PC_user1 (VLAN20) | Server (VLAN30) | Success |
 | PC_MGMT | server.souftech.local | DNS OK |
 
-![Test vlan](diagrams/test-vlan.png)
-![Test server](diagrams/test-server.png)
+![Test vlan](diagrams/Test-vlan.png)
+![Test server](diagrams/Test-server.png)
 
 ## Repository Structure
 
