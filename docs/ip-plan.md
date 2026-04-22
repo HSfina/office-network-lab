@@ -1,0 +1,40 @@
+# IP Addressing Plan — SoufTech Solutions
+
+## Network Overview
+- **Company:** SoufTech Solutions
+- **Location:** Laayoune, Morocco
+- **Author:** Soufiane Hamssassia
+- **Date:** 2026-04-22
+
+## VLAN Table
+
+| VLAN | Name       | Network           | Gateway        | DHCP Range                  |
+|------|------------|-------------------|----------------|-----------------------------|
+| 10   | Management | 192.168.10.0/24   | 192.168.10.1   | 192.168.10.10 - .50 (Static)|
+| 20   | Users      | 192.168.20.0/24   | 192.168.20.1   | 192.168.20.10 - .100        |
+| 30   | Servers    | 192.168.30.0/24   | 192.168.30.1   | Static only                 |
+| 99   | Transit    | 192.168.99.0/30   | -              | Static only                 |
+
+## Device Table
+
+| Device        | VLAN | IP Address      | Method  |
+|---------------|------|-----------------|---------|
+| SW-core SVI10 | 10   | 192.168.10.1    | Static  |
+| SW-core SVI20 | 20   | 192.168.20.1    | Static  |
+| SW-core SVI30 | 30   | 192.168.30.1    | Static  |
+| SW-core Gi0/1 | 99   | 192.168.99.2    | Static  |
+| R1 Gi0/0      | 99   | 192.168.99.1    | Static  |
+| PC_MGMT       | 10   | 192.168.10.10   | Static  |
+| Server        | 30   | 192.168.30.10   | Static  |
+| PC_Server     | 30   | 192.168.30.11   | Static  |
+| Printer_MGMT  | 10   | DHCP            | Dynamic |
+| PC_user1      | 20   | DHCP            | Dynamic |
+| PC_user2      | 20   | DHCP            | Dynamic |
+
+## DNS Records
+
+| Hostname                  | Type | IP            |
+|---------------------------|------|---------------|
+| server.souftech.local     | A    | 192.168.30.10 |
+| gateway.souftech.local    | A    | 192.168.10.1  |
+| pc-mgmt.souftech.local    | A    | 192.168.10.10 |
