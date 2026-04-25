@@ -26,6 +26,7 @@ A fully simulated enterprise network built in Cisco Packet Tracer.
 - VLANs, Trunking (802.1Q)
 - SVI Inter-VLAN Routing
 - DHCP, DNS
+- Port security
 
 ## Test Results
 
@@ -51,4 +52,4 @@ A fully simulated enterprise network built in Cisco Packet Tracer.
 ## Author
 
 **Soufiane Hamssassia** — IT Support & Network Admin
-Laayoune, Morocco | CCNA R-S & Security
+Laayoune, Morocco
